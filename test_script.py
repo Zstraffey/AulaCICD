@@ -4,7 +4,7 @@ from script import cumprimentar, conversar, despedir
 class TestCalculadora(unittest.TestCase):
 
     def test_cumprimentar(self):
-        self.assertEqual(cumprimentar("Zimmermann"), "Olá Bundão")
+        self.assertEqual(cumprimentar("Zimmermann"), "Olá Zimmermann")
         self.assertEqual(cumprimentar("Miguel"), "Olá Miguel")
         self.assertEqual(cumprimentar("Martins"), "Olá Martins")
 

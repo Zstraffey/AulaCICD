@@ -1,5 +1,5 @@
 def cumprimentar(nome):
-    return("Olá " + nome)
+    return("Prazer " + nome)
 
 def conversar(tema):
     return("Vamos falar de " + tema)
