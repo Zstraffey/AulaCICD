@@ -1,7 +1,7 @@
 import unittest 
 from script import cumprimentar, conversar, despedir
 
-class TestCalculadora(unittest.TestCase):
+class TestCumprimentar(unittest.TestCase):
 
     def test_cumprimentar(self):
         self.assertEqual(cumprimentar("Zimmermann"), "Olá Zimmermann")
