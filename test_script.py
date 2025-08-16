@@ -6,6 +6,7 @@ class TestCalculadora(unittest.TestCase):
     def test_cumprimentar(self):
         self.assertEqual(cumprimentar("Zimmermann"), "Olá Zimmermann")
         self.assertEqual(cumprimentar("Miguel"), "Olá Miguel")
+        self.assertEqual(cumprimentar("Martins"), "Olá Martins")
 
     def test_conversar(self):
         self.assertEqual(conversar("Jujutsu Kaisen"), "Vamos falar de Jujutsu Kaisen")
