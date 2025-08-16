@@ -21,3 +21,10 @@ jobs:
     - name: Run tests
       run: |
         python -m unittest test_script.py
+    - name: Package project
+      run: zip -r script.zip .
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: script-artifact
+        path: script.zip
