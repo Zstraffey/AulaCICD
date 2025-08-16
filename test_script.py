@@ -1,0 +1,19 @@
+import unittest 
+from script import cumprimentar, conversar, despedir
+
+class TestCalculadora(unittest.TestCase):
+
+    def test_cumprimentar(self):
+        self.assertEqual(cumprimentar("Zimmermann"), "Olá Zimmermann")
+        self.assertEqual(cumprimentar("Miguel"), "Olá Miguel")
+
+    def test_conversar(self):
+        self.assertEqual(conversar("Jujutsu Kaisen"), "Vamos falar de Jujutsu Kaisen")
+        self.assertEqual(conversar("Cueca do Dominic"), "Vamos falar de Cueca do Dominic")
+
+    def test_despedir(self):
+        self.assertEqual(despedir("Amanhã"), "Adeus, nos vemos Amanhã")
+        self.assertEqual(despedir("no Inferno"), "Adeus, nos vemos no Inferno")
+    
+    if __name__ == "__main__":
+        unittest.main()
