@@ -9,7 +9,7 @@ class TestCalculadora(unittest.TestCase):
 
     def test_conversar(self):
         self.assertEqual(conversar("Jujutsu Kaisen"), "Vamos falar de Jujutsu Kaisen")
-        self.assertEqual(conversar("Cueca do Dominic"), "Vamos falar de Cueca do Dominic")
+        self.assertEqual(conversar("Sakamoto Days"), "Vamos falar de Sakamoto Days")
 
     def test_despedir(self):
         self.assertEqual(despedir("Amanhã"), "Adeus, nos vemos Amanhã")
