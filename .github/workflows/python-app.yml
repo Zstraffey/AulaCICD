@@ -24,7 +24,7 @@ jobs:
     - name: Package project
       run: zip -r script.zip .
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: script-artifact
         path: script.zip
