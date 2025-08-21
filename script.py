@@ -1,8 +1,8 @@
 def cumprimentar(nome):
     return("Olá " + nome)
 
-def conversar(tema):
-    return("Vamos falar de " + tema)
+def email(tema):
+    return("Seu e-mail é " + tema)
 
-def despedir(dia):
-    return("Adeus, nos vemos " + dia)
+def senha(senha):
+    return("Sua senha é " + senha)

@@ -1,5 +1,5 @@
 import unittest 
-from script import cumprimentar, conversar, despedir
+from script import cumprimentar, email, senha
 
 class TestCumprimentar(unittest.TestCase):
 
@@ -8,14 +8,14 @@ class TestCumprimentar(unittest.TestCase):
         self.assertEqual(cumprimentar("Miguel"), "Olá Miguel")
         self.assertEqual(cumprimentar("Martins"), "Olá Martins")
 
-    def test_conversar(self):
-        self.assertEqual(conversar("Jujutsu Kaisen"), "Vamos falar de Jujutsu Kaisen")
-        self.assertEqual(conversar("Sakamoto Days"), "Vamos falar de Sakamoto Days")
-        self.assertEqual(conversar("Stray Kids"), "Vamos falar de Stray Kids")
+    def test_email(self):
+        self.assertEqual(email("migmig.zimmer@gmail.com"), "Seu e-mail é migmig.zimmer@gmail.com")
+        self.assertEqual(email("newtetcc2025@gmail.com"), "Seu e-mail é newtetcc2025@gmail.com")
+        self.assertEqual(email("miguel.silva190@etec.sp.gov.br"), "Seu e-mail é miguel.silva190@etec.sp.gov.br")
 
-    def test_despedir(self):
-        self.assertEqual(despedir("Amanhã"), "Adeus, nos vemos Amanhã")
-        self.assertEqual(despedir("no Inferno"), "Adeus, nos vemos no Inferno")
+    def test_senha(self):
+        self.assertEqual(senha("123456"), "Sua senha é 123456")
+        self.assertEqual(senha("654321"), "Sua senha é 654321")
     
     if __name__ == "__main__":
         unittest.main()
